@@ -9,7 +9,7 @@
                      <tr>
                         <th colspan="1">
                             <a href="formulario.html">Nuevo</a>
-                            <th colspan="5">Lista de ususarios</th>
+                            <th colspan="7">Lista de Pacientes</th>
                         </th>
                      </tr>   
                 </thead>
@@ -19,7 +19,10 @@
                         <td>Nombre</td>
                         <td>Apellido</td>
                         <td>Correo</td>
-                        <td colspan="2">Operaciones</td>
+                        <td>Sangre</td>
+                        <td>Habitación</td>
+                        <td>Diagnostico</td>
+                        <td>CURP</td>
                     </tr>
                     <?php
                         include("conexion.php");
@@ -33,8 +36,15 @@
                             <td><?php echo $row['Nombre'];?></td>
                             <td><?php echo $row['Edad'];?></td>
                             <td><?php echo $row['Sexo'];?></td>
+
+                            <td><?php echo $row['Sangre'];?></td>
+                            <td><?php echo $row['Habitacion'];?></td>
+                            <td><?php echo $row['Diag'];?></td>
+                            <td><?php echo $row['Curp'];?></td>
+
                             <td><a href="modificar.php?id=<?php echo $row['id'];?>">Modificar</a></td>
                             <td><a href="eliminar.php?id=<?php echo $row['id'];?>">Eliminar</a></td>
+                               
                         </tr>
                     <?php
                                }
