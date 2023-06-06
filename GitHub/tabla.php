@@ -9,7 +9,7 @@
                      <tr>
                         <th colspan="1">
                             <a href="formulario.html">Nuevo</a>
-                            <th colspan="7">Lista de Pacientes</th>
+                            <th colspan="10">Lista de Pacientes</th>
                         </th>
                      </tr>   
                 </thead>
@@ -23,6 +23,7 @@
                         <td>Habitación</td>
                         <td>Diagnostico</td>
                         <td>CURP</td>
+                        <td colspan="2">Operaciones</td>
                     </tr>
                     <?php
                         include("conexion.php");
