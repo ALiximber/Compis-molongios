@@ -8,6 +8,7 @@
     </head>
     <body>
         <center>
+        <div >
             <table border="=3" id="Tabla_principal">
                 <thead>
                      <tr>
@@ -27,8 +28,8 @@
                             <tr>
                                 <td>ID</td>
                                 <td>Nombre</td>
-                                <td>Apellido</td>
-                                <td>Correo</td>
+                                <td>Edaad</td>
+                                <td>Sexo</td>
                                 <td>Sangre</td>
                                 <td>Habitación</td>
                                 <td>Diagnostico</td>
@@ -67,6 +68,7 @@
                     </tbody>
                 </table>
             </table>
+        </div>
        </center>   
 
 
