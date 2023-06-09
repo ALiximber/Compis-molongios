@@ -9,9 +9,11 @@
     $Hab = $_POST['Habitacion'];
     $diag = $_POST['Diag'];
     $CURP = $_POST['Curp'];
+    $Usuario = $_POST['usuario']
+    $Contra = $_POST['contraseña'];
     
     
-    $query = "UPDATE progsalud set Nombre= '$nom' , Edad='$Edad', Sexo= '$Sexo', Sangre='$Sangre', Habitacion='$Hab', Diag='$diag', Curp='$CURP' WHERE id='$id'";
+    $query = "UPDATE progsalud set Nombre= '$nom' , Edad='$Edad', Sexo= '$Sexo', Sangre='$Sangre', Habitacion='$Hab', Diag='$diag', Curp='$CURP', contraseña='$Contra', usuario='$Usuario' WHERE id='$id'";
     $resultado=$conexion->query($query);
 
     if($resultado){
