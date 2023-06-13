@@ -3,11 +3,11 @@
 session_start();
 
 $usuario=$_POST['usuario'];
-$contrasña=$_POST['contraseña'];
+$Contra=$_POST['contra'];
 
 include("conexion.php");
 
-$proceso=$conexion->query("SELECT * FROM progsalud WHERE usuario='$usuario' AND contraseña='$contrasña' ");
+$proceso=$conexion->query("SELECT * FROM progsalud WHERE usuario='$Usuario' AND contras='$Contra'");
 
 if($resultado = mysqli_fetch_array($proceso))
 {
