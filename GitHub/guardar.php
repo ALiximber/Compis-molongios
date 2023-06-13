@@ -19,7 +19,7 @@
     if($resultado){
         header("Location: tabla.php");
     }else{
-        echo "No se modificó";
+        echo " No se guardó";
     }
     
 ?>

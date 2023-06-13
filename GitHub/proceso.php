@@ -2,12 +2,12 @@
 
 session_start();
 
-$usuario=$_POST['usuario'];
+$Usuario=$_POST['usuario'];
 $Contra=$_POST['contra'];
 
 include("conexion.php");
 
-$proceso=$conexion->query("SELECT * FROM progsalud WHERE usuario='$Usuario' AND contras='$Contra'");
+$proceso=$conexion->query("SELECT * FROM progsalud WHERE usuario='$Usuario' AND contra='$Contra'");
 
 if($resultado = mysqli_fetch_array($proceso))
 {
@@ -16,7 +16,6 @@ if($resultado = mysqli_fetch_array($proceso))
     echo"Session existosa";
 }
 else{
-    header("Location: sesion.php");
     echo"Session no extosa";
 }
 ?>
