@@ -1,6 +1,8 @@
-#Principal{
-    background-color: #00BCD4;
+#Principal
+{
+    background-color: #aee4f5b0;
     border-radius: 5px;
+    border: 3px solid #11c2dd;
     -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
@@ -11,24 +13,48 @@
     position: relative;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
-form{
+
+form
+{
    margin:10%;
    
 }
-#input{
+
+#input
+{
     border: 1px solid brown;
     width: 250px;
     border-radius: 3px;
     margin: 10%;
     float: left;
+    
 }
-#div_input{
+
+#div_input
+{
     width: 100px;
     height: 100px;
     margin: 30px;
     margin-top: 30%;
-   
-    
+}
 
+#boton
+{
+    width: 50%;
+    height: 15%;
+    background-color: rgba(247, 247, 247, 0.397);
+    border: 1px solid #c7b6b6fb;
+}
+
+#titulo
+{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.texto
+{
+    background-color: rgba(247, 247, 247, 0.397);
+    border: 1px solid #c7b6b6fb;
 }
