@@ -17,5 +17,6 @@ if($resultado = mysqli_fetch_array($proceso))
 }
 else{
     echo"Session no extosa";
+    header("Location: index.php");
 }
 ?>
