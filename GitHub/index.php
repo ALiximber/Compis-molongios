@@ -10,9 +10,10 @@
     <br></br>
     <div id="Principal">
         <form action="proceso.php" method="POST">
-            <input type="text" name="usuario" value="" placeholder="Ingresa su usuario..."/>
-            <input type="password" name="contra" value="" placeholder="Ingresa su contraseña..."/>
-            <input type="submit" value="Aceptar"/>
+            <h2 id="titulo">PROGSALUD</h2>
+            <input type="text" class="texto"  name="usuario" value="" placeholder="Ingresa su usuario..."/><br><br>
+            <input type="password" class="texto" name="contra" value="" placeholder="Ingresa su contraseña..."/><br><br>
+            <input id="boton" type="submit" value="Aceptar"/>
         </form>
 
     </div>
