@@ -8,14 +8,11 @@
         <?php
         session_start();
 
-            if(isset($_SESSION['usuario'])){
-                echo"session existosa\n Bienvenido";
-
-                 echo"<a href='cerrar_sesion.php'>cerrar sesion</a>";
-                
-            
+            if(isset($_SESSION['u_usuario'])){
+                header("Location: tabla.php");
             }else{
-               header("Location: tabla.php");
+                echo"session existosa\n Bienvenido";
+                echo"<a href='cerrar_sesion.php'>cerrar sesion</a>"; 
             }
         ?>
     </body>

@@ -2,21 +2,26 @@
 
 session_start();
 
-$Usuario=$_POST['usuario'];
-$Contra=$_POST['contra'];
+$Usuario = $_POST['usuario'];
+$Contra = $_POST['contra'];
 
 include("conexion.php");
 
-$proceso=$conexion->query("SELECT * FROM progsalud WHERE usuario='$Usuario' AND contra='$Contra'");
-
-if($resultado = mysqli_fetch_array($proceso))
-{
-    $_SESSION['u_usuario'] = $usuario;
-    header("Location: sesion.php");
-    echo"Session existosa";
+if ($Usuario == "" || $Contra == "") {
+    echo "Usuario y/o contraseña vacíos. Redireccionando a index.php...";
+    header("Location: index.php");
+    exit; // Termina la ejecución del script después de redireccionar
 }
-else{
-    echo"Session no extosa";
+
+$proceso = $conexion->query("SELECT * FROM progsalud WHERE usuario='$Usuario' AND contra='$Contra'");
+
+if ($resultado = mysqli_fetch_array($proceso)) {
+    $_SESSION['u_usuario'] = $Usuario;
+    header("Location: sesion.php");
+    echo "Sesión exitosa";
+} else {
+    echo "Sesión no exitosa";
     header("Location: index.php");
 }
+
 ?>
