@@ -1,24 +1,32 @@
 <html>
     <head>
         <title>Conexion</title>
-        <style>
-        
-        </style>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilos.css">
        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     </head>
     <body>
         <center>
         <div >
-            <table border="=3" id="Tabla_principal">
+            <table id="Tabla_principal">
+                <thead>
+                     <tr>
+                        <th colspan="1">
+                            <th id ="lista" colspan="9">Lista de Pacientes</th>
+                        </th>
+                     </tr>   
+                     <tr>
+                        <th colspan="1">
+                            <td><a id="nuevo" href="formulario.html">Nuevo</a></td>
+                        </th>
+                     </tr>  
+                </thead>
+
+ 
 
 
                <table class="table">
-               <div class="table">
-                    <th colspan="10" class="table-dark" style="">Lista de Pacientes</th>
-                </div>
-                   
                     <tbody>
-                    
                          <thead class="table-dark">
                             <tr>
                                 <td>
@@ -76,9 +84,7 @@
                         </thead>
                         <?php
                             include("conexion.php");
-                            
                             $query="SELECT * FROM progsalud";
-                            
                             $resultado=$conexion->query($query);
                                 while($row=$resultado->fetch_assoc())
                                 {
@@ -104,13 +110,7 @@
                                 }
                         ?>
                     </tbody>
-                    
                     </tbody>
-                    <tr>
-                        <th colspan="1">
-                            <a href="formulario.html"  class="btn btn-secondary btn-lg" >Nuevo</a>
-                        </th>
-                     </tr> 
                 </table>
             </table>
         </div>

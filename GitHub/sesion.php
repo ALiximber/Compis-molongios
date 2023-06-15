@@ -12,15 +12,10 @@
                 echo"session existosa\n Bienvenido";
 
                  echo"<a href='cerrar_sesion.php'>cerrar sesion</a>";
-                 
-                $dato = $_SESSION['dato'];
-                $_SESSION['Dato'] =  $dato;
+                
             
             }else{
-                $dato = $_SESSION['dato'];
-                $_SESSION['Dato'] =  $dato;
-
-                header("Location: tabla.php");
+               header("Location: tabla.php");
             }
         ?>
     </body>
