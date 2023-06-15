@@ -11,6 +11,8 @@ $proceso=$conexion->query("SELECT * FROM progsalud WHERE usuario='$Usuario' AND 
 
 if($resultado = mysqli_fetch_array($proceso))
 {
+    $_SESSION['dato'] = "SELECT id FROM `progsalud` WHERE usuario='$Usuario' AND contra='$Contra' ";
+
     $_SESSION['u_usuario'] = $usuario;
     header("Location: sesion.php");
     echo"Session existosa";

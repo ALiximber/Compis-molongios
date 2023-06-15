@@ -10,20 +10,15 @@
         <center>
         <div >
             <table border="=3" id="Tabla_principal">
-                <thead>
-                     <tr>
-                        <th colspan="1">
-                            <a href="formulario.html">Nuevo</a>
-                            <th colspan="9">Lista de Pacientes</th>
-                        </th>
-                     </tr>   
-                </thead>
-
- 
 
 
                <table class="table">
+               <div class="table">
+                    <th colspan="10" class="table-dark" style="">Lista de Pacientes</th>
+                </div>
+                   
                     <tbody>
+                    
                          <thead class="table-dark">
                             <tr>
                                 <td>
@@ -81,7 +76,9 @@
                         </thead>
                         <?php
                             include("conexion.php");
+                            
                             $query="SELECT * FROM progsalud";
+                            
                             $resultado=$conexion->query($query);
                                 while($row=$resultado->fetch_assoc())
                                 {
@@ -107,7 +104,13 @@
                                 }
                         ?>
                     </tbody>
+                    
                     </tbody>
+                    <tr>
+                        <th colspan="1">
+                            <a href="formulario.html"  class="btn btn-secondary btn-lg" >Nuevo</a>
+                        </th>
+                     </tr> 
                 </table>
             </table>
         </div>
