@@ -18,13 +18,13 @@ body
     border: 1px solid #a8d3da;
     width: 450px;
 }
-/*#color :-ms-input-placeholder
-{
-    color: red;
-}*/
+
 .sombra 
 {
-    box-shadow: 5px 5px 15px gray ;
+    /* box-shadow: 5px 5px 15px gray ; */
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
 }
 
 #logodiv
@@ -32,8 +32,32 @@ body
     width:50px ;
     height: 50px;
 }
-#logoimg
+
+#nuevo
 {
-    width: 100%;
-    height: 100%;
+   margin-left: 35px;
+}
+
+#lista
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#boton
+{
+    width: 27% ;
+    height: 7%;
+}
+
+#link
+{
+    margin: 3%;
+    margin-left: 6.5%;
+}
+
+#salir
+{
+    width: 15% ;
+    height: 7%;
+    margin-left: 82.5%;
 }
