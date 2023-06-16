@@ -15,11 +15,6 @@
                             <th id ="lista" colspan="9">Lista de Pacientes</th>
                         </th>
                      </tr>   
-                     <tr>
-                        <th colspan="1">
-                            <td><a id="nuevo" href="formulario.html">Nuevo</a></td>
-                        </th>
-                     </tr>  
                 </thead>
 
  
@@ -74,12 +69,6 @@
                                     <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"/>
                                     </svg>
                                 CURP</td>
-                                <td colspan="2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                    </svg>
-                                Operaciones</td>
                             </tr>
                         </thead>
                         <?php
@@ -101,8 +90,6 @@
                                 <td><?php echo $row['Diag'];?></td>
                                 <td><?php echo $row['Curp'];?></td>
 
-                                <td><a href="modificar.php?id=<?php echo $row['id'];?>">Modificar</a></td>
-                                <td><a href="eliminar.php?id=<?php echo $row['id'];?>">Eliminar</a></td>
                                 
                             </tr>
                             
